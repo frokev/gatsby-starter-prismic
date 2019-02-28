@@ -1,10 +1,10 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`
-});
+require("dotenv").config();
 
 const prismicHtmlSerializer = require("./src/gatsby/htmlSerializer");
 
 const website = require("./config/website");
+
+const path = require("path");
 
 const pathPrefix = website.pathPrefix === "/" ? "" : website.pathPrefix;
 
@@ -43,6 +43,13 @@ module.exports = {
     "gatsby-plugin-lodash",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`)
+      }
+    },
     {
       resolve: "gatsby-plugin-typography",
       options: {
