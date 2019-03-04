@@ -40,6 +40,14 @@ module.exports = {
         htmlSerializer: () => prismicHtmlSerializer
       }
     },
+    {
+      resolve: "gatsby-plugin-prismic-preview",
+      options: {
+        repositoryName: "gatsby-starter-prismic-123",
+        linkResolver: require("./src/linkResolver"),
+        path: "/preview"
+      }
+    },
     "gatsby-plugin-lodash",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
