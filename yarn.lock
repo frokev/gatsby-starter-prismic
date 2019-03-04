@@ -4268,6 +4268,15 @@ gatsby-plugin-page-creator@^2.0.8:
     parse-filepath "^1.0.1"
     slash "^1.0.0"
 
+gatsby-plugin-prismic-preview@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-prismic-preview/-/gatsby-plugin-prismic-preview-2.0.0.tgz#c2e8d746deded2739a400dcb7e561ab6606ddabb"
+  dependencies:
+    lodash "4.17.11"
+    prismic-javascript "1.5.0"
+    react "^16.5.2"
+    traverse "0.6.6"
+
 gatsby-plugin-react-helmet@^3.0.7:
   version "3.0.7"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-3.0.7.tgz#e2fb41232c98ef7a7e7366edcde219c4bfa69392"
@@ -6008,7 +6017,7 @@ lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
 
-lodash@^4.11.1, lodash@^4.13.1, lodash@^4.15.0, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0:
+lodash@4.17.11, lodash@^4.11.1, lodash@^4.13.1, lodash@^4.15.0, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
 
@@ -7592,6 +7601,13 @@ prismic-helpers@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/prismic-helpers/-/prismic-helpers-1.0.0.tgz#8337420cf187f55fb7b7a8be755523c8696fc329"
 
+prismic-javascript@1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/prismic-javascript/-/prismic-javascript-1.5.0.tgz#d11a3489c73a643e9f5f6c1d9c6b552091d67656"
+  dependencies:
+    cross-fetch "^2.2.0"
+    promise-polyfill "8.0.0"
+
 prismic-javascript@^1.1.5:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/prismic-javascript/-/prismic-javascript-1.5.1.tgz#0f9da4e58a094ca0fb0b68e2e458e1a6c33a52ce"
@@ -7900,7 +7916,7 @@ react-typography@^0.16.18:
   version "0.16.18"
   resolved "https://registry.yarnpkg.com/react-typography/-/react-typography-0.16.18.tgz#89341b63d615f1dfcf5e471797df5acce5bde1f3"
 
-react@^16.8.3:
+react@^16.5.2, react@^16.8.3:
   version "16.8.3"
   resolved "https://registry.yarnpkg.com/react/-/react-16.8.3.tgz#c6f988a2ce895375de216edcfaedd6b9a76451d9"
   dependencies:
@@ -9255,6 +9271,10 @@ tough-cookie@~2.4.3:
   dependencies:
     psl "^1.1.24"
     punycode "^1.4.1"
+
+traverse@0.6.6:
+  version "0.6.6"
+  resolved "https://registry.yarnpkg.com/traverse/-/traverse-0.6.6.tgz#cbdf560fd7b9af632502fed40f918c157ea97137"
 
 trim-newlines@^1.0.0:
   version "1.0.0"

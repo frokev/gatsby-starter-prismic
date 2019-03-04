@@ -68,9 +68,7 @@ const Post = ({ data: { prismicPost, posts }, location }) => {
   );
 };
 
-export default withPrismicPreview({ data: { prismicPost, posts }, location })(
-  Post
-);
+export default Post;
 
 Post.propTypes = {
   data: PropTypes.shape({
